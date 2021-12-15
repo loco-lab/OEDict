@@ -9,9 +9,8 @@ https://www.ling.upenn.edu/~kurisuto/germanic/oe_bosworthtoller_about.html
 ## Instructions
 
 ```
-git clone git@github.com:loco-lab/pyglossary.git
+git clone git@github.com:ilius/pyglossary.git
 cd pyglossary
-git checkout at_delim
 pip install .
 ```
 

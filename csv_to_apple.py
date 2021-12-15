@@ -1,7 +1,14 @@
-import pyglossary
+from pyglossary import Glossary
 import sys
 
+Glossary.init()
 
-my_dict = pyglossary.Glossary()
-my_dict.read(sys.argv[1], progressbar=False)
-my_dict.write(sys.argv[2], 'AppleDict')
+glos = Glossary()
+glos.convert(
+    inputFilename=sys.argv[1],
+    outputFilename=sys.argv[2],
+    outputFormat='AppleDict',
+    readOptions={
+        'delimiter': '@',
+    },
+)
